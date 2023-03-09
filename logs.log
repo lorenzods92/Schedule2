@@ -1,3 +1,4 @@
-DEBUG - app - main message - 07-03-2023 15:56:59
-INFO - da_server - Importati dati cartelle rosse da OAP_CSB_20230307150309915000.xlsx - 07-03-2023 15:57:06
-DEBUG - da_server - submodule message - 07-03-2023 15:57:06
+DEBUG - app - main message - 09-03-2023 15:06:05
+INFO - items_input - Importati dati cartelle rosse da OAP_CSB_20230309150349569000.xlsx - 09-03-2023 15:06:23
+DEBUG - items_input - Creato file items.xlsx - 09-03-2023 15:06:27
+INFO - crea_input - Importati 64 articoli da query, gruppi attivi = ['SISTECH', 'CHF270', 'DFS'] - 09-03-2023 15:06:38

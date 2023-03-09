@@ -28,3 +28,20 @@ def filtra_colonne_df(df: pd.DataFrame , lista_col : list) -> pd.DataFrame:
         raise KeyError
     
     return df_filt
+
+def merge_df(df: pd.DataFrame, df2: pd.DataFrame, col: str) -> pd.DataFrame:
+    '''Unisco 2 dataframe in base ai valori della colonna col'''
+
+    df_merged = df.merge(df2, left_on = col, right_on = col)
+    check_missing_data(df, df_merged, col)
+    return df_merged
+
+def check_missing_data(df: pd.DataFrame, df_merged: pd.DataFrame, col: str) -> None:
+    '''Controllo se durante la fase di merge perdo dei dati rispetto al df 
+    originale'''
+
+    if df.shape[0] > df_merged.shape[0]:
+        logger.warning(f"Alcuni dati non possono essere trovati: {col} ")
+        codes_pre_merge= set(df[col].squeeze())
+        codes_post_merge = set(df_merged[col].squeeze())
+        logger.warning(f"Codici mancanti:{codes_pre_merge.symmetric_difference(codes_post_merge)}")
