@@ -1,4 +1,7 @@
-'''MODULO PER CREARE DATI DI INPUT PROGRAMMA SU ITEMS'''
+'''MODULO PER CREARE DATI DI INPUT PROGRAMMA SU ITEMS:
+- FUNZIONI PER IMPORTARE E FILTRARE FILE EXCEL
+- FUNZIONI PER IMPORTARE FILE OAP DA SERVER
+OBIETTIVO MODULO: CREARE FILE items.xlsx INPUT PER IL PROGRAMMA'''
 
 import logging
 import os
@@ -7,7 +10,6 @@ import shutil
 import pandas as pd
 from typing import Dict
 from import_data import import_utils as iu
-
 
 logger = logging.getLogger('root')
 
@@ -77,8 +79,8 @@ def crea_df_items_da_cartelle_rosse(uso_leveling: bool, cr_path_file: str, cr_in
     
     #Rinomino colonne.
     df_cr_filt = df_cr_filt.rename(columns={"Item": "CODICE",
-                            "Promise_date": "PROMISE_DATE",
-                            "OpenQty" : "LOTTO"})
+                                            "Promise_date": "PROMISE_DATE",
+                                            "OpenQty" : "LOTTO"})
     
     #Rinomino la colonna index.
     df_cr_filt.index.names = ['NUMERO']
