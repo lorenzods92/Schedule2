@@ -1,5 +1,5 @@
-DEBUG - app - main message - 09-03-2023 16:27:16
-INFO - items_input - Importati dati cartelle rosse da OAP_CSB_20230309160303691000.xlsx - 09-03-2023 16:27:22
-DEBUG - items_input - Creato file items.xlsx - 09-03-2023 16:27:26
-INFO - crea_input - Importati 64 articoli da query, gruppi attivi = ['SISTECH', 'CHF270', 'DFS'] - 09-03-2023 16:27:42
-INFO - dati_lama_input - Importati 10562 articoli da cartelle LC_DATI - 09-03-2023 16:27:53
+DEBUG - app - main message - 10-03-2023 15:26:54
+INFO - items_input - Importati dati cartelle rosse da OAP_CSB_20230310150349670000.xlsx - 10-03-2023 15:27:01
+DEBUG - items_input - Creato file items.xlsx - 10-03-2023 15:27:05
+INFO - crea_input_excel - Importati 64 articoli da query, gruppi attivi = ['SISTECH', 'CHF270', 'DFS'] - 10-03-2023 15:27:20
+INFO - crea_input_excel - Importati 10562 articoli da cartelle LC_DATI - 10-03-2023 15:27:29
