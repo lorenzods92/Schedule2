@@ -16,3 +16,5 @@ Per importare i file di input, puoi usare {py:func}`app.main`:
 ```{eval-rst}
 .. autofunction:: app.main()
 ```
+
+Qualche volta viene rilevato un errore

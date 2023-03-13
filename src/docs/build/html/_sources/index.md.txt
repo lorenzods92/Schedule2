@@ -28,6 +28,7 @@ Leggere istruzioni di {ref}`Installazione`
 :maxdepth: 2
 
 usage
+crea_documentazione
 
 ```
 
